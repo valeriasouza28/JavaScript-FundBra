@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>js04-while2.html</title>
+</head>
+
+<body>
+<script language="Javascript">
+  <!--
+  /*Objetivo: Executar uma sequência de comando por uma quantidade indeterminada de vezes utilizado uma variável de controle.
+  (valor lógico = true por exemplo) no lugar dos contadores delimitadores. O controle deve ser feito um controle através de perguntas na tela, utilizando o metodo cofirm (ok ou Cancelar por exemplo).
+  */
+  /*Definição de variáveis*/
+  var js_contador = 1;
+  var js_resposta = true;
+  
+  /*Laço de Repetição Condicional - while utilizando controle de limitação do usuário */
+  while (js_resposta == true) {
+    document.write('<p>' + js_contador + '&ordf; Repetição de uma única linha de comando dentro de um laço condicional: ');
+    js_contador += 1;
+    js_resposta = window.confirm ('Deseja Continuar');
+    
+  }
+  //-->
+</script>
+</body>
+
+</html>
